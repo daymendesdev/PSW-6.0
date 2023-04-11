@@ -1,0 +1,59 @@
+O que é programação? (x)
+
+-:> ambientes virtuais (x)
+para ativar o ambiente virtual, basta abrir o terminal e digitar "python -m venv venv"
+    #para ativar, utilizaremos:
+    #windows: venv\Scripts\Activate
+    Set-ExecutionPolicy - Scope CurrentUser -ExecutionPolicy RemoteSigned
+-> Variáveis 
+   • É uma forma de armazenarmos informações dentro do nosso pc/programa
+   • Todas as aplicações servem para receber dados, receber informações e processá-los, só depois temos retorno da informação processada.
+   • Para armazenarmos dados, temos um componente dentro do computador chamado "memória ram" e o disco rígido, sendo um para armazenar dados temporários e outro para dados "permanentes" respectivamente 
+        Modelo de variável:
+            nome_da_variável = valor (idade = 37)
+    • Tipos de Variáveis básicos:
+        -> int (números inteiros, sejam negativos ou positivos)
+        -> float (números fracionados, sejam negativos ou positivos)
+        -> string (Cadeia de caracteres, no python, tudo que está entre aspas é string)
+        -> bool (para verdadeiro ou falso)
+
+-> Saída de dados
+    print() é responsavel por mostrar os dados na tela.
+    Ex:
+        idade = 24
+        nome = 'Day'
+        print(f'Meu nome é {nome} e tenho {idade} anos')
+
+-> Entrada de dados
+    input()é responsavel por receber os dados
+    Ex:
+        nome = input(Qual seu nome?)
+        print(f'Olá, {nome}, seja bem vindo! ')
+
+-> Conversão de dados
+    Se tentarmos somar números que estão dentro de strings, ele irá fazer a concatenização, ou seja, irá juntar os 2 valores, não somar, para realizar a soma dos mesmos, devemos fazer a conversão dos valores da seguinte maneira:
+        prova1 = input(int('10'))
+        prova2 = int('6')
+        resultado = prova1 + prova2
+        print(f'A soma dos 2 valores é igual a {resultado}')
+        Como tudo que está entre parenteses é automaticamente considerado como string para o interpretador, devemos utilizar o atributo que queremos para a conversão, como o caso do exemplo acima, o qual usamos "int'
+
+-> Operadores matemáticos (+ - * ** / // %)
+prova1 = 10
+prova2 = 8
+soma = (prova1 + prova2) /2
+-> Operadores relacionais  (== > < > >= <= )
+-> Operadors lógicos (and or not)
+    and: Se ao menos 1 dos 2 itens forem verdadeiros, ele retorna true, se os 2 forem falsos, ele retornará false
+    not:
+-> Estruturas de decisão (if, else e elif)
+    if: se a condição for verdadeira, irá exibir um determinado bloco de comando
+    elif: se a condição do if for falsa, o if será o próximo a ser verificado, caso seja verdade, exibirá seu bloco de comando.
+    else: caso nem o if e elif sejam verdadeiros, será exibido um bloco de comando alternativo.
+-> Estruturas de repetição
+    -> while
+    -> For
+-> Estrutura de dados
+    -> Listas
+    -> Dicionários
+-> Funções
